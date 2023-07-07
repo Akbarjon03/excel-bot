@@ -23,8 +23,8 @@ function sendMessage(id, text, keyBoard) {
 
 function doPost(e) {
   var contents = JSON.parse(e.postData.contents);
-  var ssId = "1S5_-iCdjef09V-rVDKFEQpy_0PoHxvmfRz8s1t_q1Pc";
-  var sheet = SpreadsheetApp.openById(ssId).getSheetByName("Sheet1");
+  var ssId = " ";
+  var sheet = SpreadsheetApp.openById(ssId).getSheetByName(" ");
 
   if (contents.callback_query) {
     var id = contents.callback_query.from.id;
